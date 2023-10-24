@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main" type="Application" factoryName="Application" singleton="false">
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="wordleClient" />
+    <option name="VM_PARAMETERS" value="--module-path &quot;.\lib\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
