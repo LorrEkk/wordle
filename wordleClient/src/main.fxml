@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <GridPane fx:id="wordleGridPane" hgap="5.0" layoutX="243.0" layoutY="35.0" vgap="5.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="52.0" prefWidth="52.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="52.0" prefWidth="52.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="52.0" prefWidth="52.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="52.0" prefWidth="52.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="52.0" prefWidth="52.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="1" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="2" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="3" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="4" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.rowIndex="4" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.rowIndex="5" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label prefHeight="52.0" prefWidth="52.0" styleClass="tile" text="" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="keyboardPane" hgap="6.0" layoutX="114.0" layoutY="464.0" vgap="8.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="48.0" prefWidth="48.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="52.0" prefHeight="52.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ą" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ć" GridPane.columnIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ę" GridPane.columnIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ł" GridPane.columnIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ó" GridPane.columnIndex="4" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ś" GridPane.columnIndex="5" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ń" GridPane.columnIndex="6" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ż" GridPane.columnIndex="7" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Ź" GridPane.columnIndex="8" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Q" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="W" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="E" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="R" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="T" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Y" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="U" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="I" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="O" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="P" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="H" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="S" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="D" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="F" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="G" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="J" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="K" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="L" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="A" GridPane.rowIndex="2" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="Z" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="X" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="C" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="V" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="B" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="N" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label prefHeight="52.0" prefWidth="48.0" styleClass="keyboardTile" text="M" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
