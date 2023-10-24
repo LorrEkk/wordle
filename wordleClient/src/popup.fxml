@@ -29,7 +29,7 @@
                   <Font size="21.0" />
                </font>
             </Label>
-            <Label text="Czy chcesz rozpocząć nową grę?" GridPane.rowIndex="1">
+            <Label text="Play again" GridPane.rowIndex="1">
                <padding>
                   <Insets bottom="40.0" />
                </padding>

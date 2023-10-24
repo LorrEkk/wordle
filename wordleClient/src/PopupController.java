@@ -7,9 +7,9 @@ public class PopupController { //display game over popup
 
     public void setPopupText(boolean result) {
         if (result) {
-            popupLabel.setText("Wygrałeś!");
+            popupLabel.setText("You won!");
         } else {
-            popupLabel.setText("Przegrałeś");
+            popupLabel.setText("You lost!");
         }
     }
 }
