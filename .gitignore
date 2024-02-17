@@ -1,17 +1,21 @@
 # User-specific stuff
-**/.idea/**/workspace.xml
-**/.idea/**/tasks.xml
-**/.idea/**/usage.statistics.xml
-**/.idea/**/dictionaries
-**/.idea/**/shelf
+wordleClient/.idea/**/workspace.xml
+wordleClient/.idea/**/tasks.xml
+wordleClient/.idea/**/usage.statistics.xml
+wordleClient/.idea/**/dictionaries
+wordleClient/.idea/**/shelf
 
 # Sensitive or high-churn files
-**/.idea/**/dataSources/
-**/.idea/**/dataSources.ids
-**/.idea/**/dataSources.local.xml
-**/.idea/**/sqlDataSources.xml
-**/.idea/**/dynamic.xml
-**/.idea/**/uiDesigner.xml
-**/.idea/**/dbnavigator.xml
+wordleClient/.idea/**/dataSources/
+wordleClient/.idea/**/dataSources.ids
+wordleClient/.idea/**/dataSources.local.xml
+wordleClient/.idea/**/sqlDataSources.xml
+wordleClient/.idea/**/dynamic.xml
+wordleClient/.idea/**/uiDesigner.xml
+wordleClient/.idea/**/dbnavigator.xml
 
-**/out/
+wordleClient/out/
+
+wordleServer/.idea
+wordleServer/__pycache__/
+wordleServer/venv/

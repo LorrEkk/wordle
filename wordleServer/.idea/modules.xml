@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/wordleServer.iml" filepath="$PROJECT_DIR$/wordleServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wordleServer.iml" filepath="$PROJECT_DIR$/.idea/wordleServer.iml" />
     </modules>
   </component>
 </project>
