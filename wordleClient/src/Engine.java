@@ -47,7 +47,6 @@ public class Engine {
         }
 
         answer = drawAnswer();
-        System.out.println(answer);
     }
 
     private String drawAnswer() {
@@ -55,6 +54,8 @@ public class Engine {
 
         try {
             answer = connection.drawAnswer();
+
+            System.out.println(answer);
         } catch (RuntimeException e) {
             reconnect();
             drawAnswer();
@@ -184,8 +185,6 @@ public class Engine {
 
     private void resetGame() {
         answer = drawAnswer();
-
-        System.out.println(answer);
 
         attempts = 0;
         pointer = 0;
