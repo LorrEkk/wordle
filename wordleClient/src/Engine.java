@@ -50,29 +50,21 @@ public class Engine {
 
             System.out.println(answer);
         } catch (RuntimeException e) {
-//            reconnect();
+            connectionError();
             drawAnswer();
         }
 
         return answer;
     }
 
-//    private void reconnect() {
-//        if (controller.showErrorAlert()) {
-//            System.out.println("Reconnecting ...");
-//
-//            try {
-//                connection.run();
-//                System.out.println("Connected");
-//            } catch (RuntimeException e) {
-//                reconnect();
-//            }
-//        } else {
-//            connection.closeConnection();
-//            Platform.exit();
-//            System.exit(0);
-//        }
-//    }
+    private void connectionError() {
+        if (controller.showErrorAlert()) {
+            System.out.println("Sending http request ...");
+        } else {
+            Platform.exit();
+            System.exit(0);
+        }
+    }
 
     public void addLetterToWordBuilder(KeyEvent event) {
         if (!isGameOver && wordBuilder.length() < 5 && event.getCode().isLetterKey()) {
@@ -116,15 +108,13 @@ public class Engine {
                     if (controller.showGameOverPopup(gameResult)) {
                         resetGame();
                     } else {
-//                        connection.closeConnection();
                         Platform.exit();
                     }
                 }
             }
         } catch (RuntimeException e) {
-            System.out.println(e);
-//            reconnect();
-//            guess();
+            connectionError();
+            guess();
         }
     }
 
