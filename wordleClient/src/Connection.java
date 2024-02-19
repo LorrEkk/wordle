@@ -12,21 +12,14 @@ import java.net.http.HttpResponse;
 
 public class Connection {
     private HttpClient client = HttpClient.newHttpClient();
-    private String checkWord;
     private Gson gson = new Gson();
 
-
-    HttpRequest drawRequest = HttpRequest.newBuilder()
-            .uri(URI.create("http://127.0.0.1:8000/wordle/draw"))
-            .GET()
-            .build();
-
-    HttpRequest checkRequest = HttpRequest.newBuilder()
-            .uri(URI.create("http://127.0.0.1:8000/wordle/check?" + checkWord))
-            .GET()
-            .build();
-
     public String drawAnswer() throws RuntimeException {
+        HttpRequest drawRequest = HttpRequest.newBuilder()
+                .uri(URI.create("http://127.0.0.1:8000/wordle/draw"))
+                .GET()
+                .build();
+
         try {
             HttpResponse<String> response = client.send(drawRequest, HttpResponse.BodyHandlers.ofString());
             return gson.fromJson(response.body(), String.class);
@@ -36,7 +29,17 @@ public class Connection {
     }
 
     public Boolean checkWord(String word) throws RuntimeException {
-        return true;
+        HttpRequest checkRequest = HttpRequest.newBuilder()
+                .uri(URI.create("http://127.0.0.1:8000/wordle/check?word=" + word))
+                .GET()
+                .build();
+
+        try {
+            HttpResponse<String> response = client.send(checkRequest, HttpResponse.BodyHandlers.ofString());
+            return gson.fromJson(response.body(), Boolean.class);
+        } catch (IOException | InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 

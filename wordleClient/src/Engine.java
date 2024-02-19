@@ -122,8 +122,9 @@ public class Engine {
                 }
             }
         } catch (RuntimeException e) {
+            System.out.println(e);
 //            reconnect();
-            guess();
+//            guess();
         }
     }
 
