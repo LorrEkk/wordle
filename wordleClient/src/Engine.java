@@ -39,13 +39,6 @@ public class Engine {
         plChars.put('X', "Ź");
 
         connection = new Connection();
-
-        try {
-            connection.run();
-        } catch (RuntimeException e) {
-            reconnect();
-        }
-
         answer = drawAnswer();
     }
 
@@ -57,29 +50,29 @@ public class Engine {
 
             System.out.println(answer);
         } catch (RuntimeException e) {
-            reconnect();
+//            reconnect();
             drawAnswer();
         }
 
         return answer;
     }
 
-    private void reconnect() {
-        if (controller.showErrorAlert()) {
-            System.out.println("Reconnecting ...");
-
-            try {
-                connection.run();
-                System.out.println("Connected");
-            } catch (RuntimeException e) {
-                reconnect();
-            }
-        } else {
-            connection.closeConnection();
-            Platform.exit();
-            System.exit(0);
-        }
-    }
+//    private void reconnect() {
+//        if (controller.showErrorAlert()) {
+//            System.out.println("Reconnecting ...");
+//
+//            try {
+//                connection.run();
+//                System.out.println("Connected");
+//            } catch (RuntimeException e) {
+//                reconnect();
+//            }
+//        } else {
+//            connection.closeConnection();
+//            Platform.exit();
+//            System.exit(0);
+//        }
+//    }
 
     public void addLetterToWordBuilder(KeyEvent event) {
         if (!isGameOver && wordBuilder.length() < 5 && event.getCode().isLetterKey()) {
@@ -123,13 +116,13 @@ public class Engine {
                     if (controller.showGameOverPopup(gameResult)) {
                         resetGame();
                     } else {
-                        connection.closeConnection();
+//                        connection.closeConnection();
                         Platform.exit();
                     }
                 }
             }
         } catch (RuntimeException e) {
-            reconnect();
+//            reconnect();
             guess();
         }
     }
