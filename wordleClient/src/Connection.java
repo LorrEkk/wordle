@@ -12,6 +12,7 @@ public class Connection {
     public String drawAnswer() throws RuntimeException {
         HttpRequest drawRequest = HttpRequest.newBuilder()
                 .uri(URI.create("http://127.0.0.1:8000/wordle/draw"))
+                .version(HttpClient.Version.HTTP_1_1)
                 .GET()
                 .build();
 
@@ -26,6 +27,7 @@ public class Connection {
     public Boolean checkWord(String word) throws RuntimeException {
         HttpRequest checkRequest = HttpRequest.newBuilder()
                 .uri(URI.create("http://127.0.0.1:8000/wordle/check?word=" + word))
+                .version(HttpClient.Version.HTTP_1_1)
                 .GET()
                 .build();
 
